@@ -62,16 +62,23 @@ export default function App() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${navBackground}`}>
         <div className="container mx-auto px-6 h-20 flex justify-between items-center">
           
+     
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-             <div className="relative w-10 h-10 flex items-center justify-center bg-ocean-500 rounded-lg overflow-hidden group-hover:scale-110 transition-transform">
-                <Droplets className="text-white w-6 h-6" />
-             </div>
-             <div className="flex flex-col">
-                <span className="font-heading font-bold text-xl leading-none tracking-tight">DOMNUS<span className="text-ocean-400">AQUA</span></span>
-                <span className="text-[10px] text-slate-400 uppercase tracking-widest">{lang === 'hu' ? 'Tanuszoda' : 'Bazin Înot'}</span>
-             </div>
-          </a>
+<a href="#" className="flex items-center gap-2 group">
+  {/* EZT CSERÉLD LE A KÉPRE! */}
+  <div className="relative w-10 h-10 flex items-center justify-center rounded-lg overflow-hidden group-hover:scale-110 transition-transform">
+    <img 
+      src={logoKép} // A változó, amit importáltál
+      alt="Tanuszoda Logó" 
+      className="w-full h-full object-cover" // A képet kitölti a div-et
+    />
+  </div>
+  {/* A szöveg marad a képen kívül, ahogy eddig is volt */}
+  <div className="flex flex-col">
+    <span className="font-heading font-bold text-xl leading-none tracking-tight">DOMNUS<span className="text-ocean-400">AQUA</span></span>
+    <span className="text-[10px] text-slate-400 uppercase tracking-widest">{lang === 'hu' ? 'Tanuszoda' : 'Bazin Înot'}</span>
+  </div>
+</a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -247,7 +254,7 @@ export default function App() {
             className="text-center mb-16"
           >
             <h2 className="font-heading text-3xl md:text-5xl font-bold mb-4">
-              <span className="text-ocean-400">DOMUS</span> AQUA
+              <span className="text-ocean-400">DOMNUS</span> AQUA
               <span className="block text-2xl md:text-3xl text-white mt-2 font-light">{lang === 'hu' ? 'Szolgáltatások' : 'Servicii'}</span>
             </h2>
             <div className="w-20 h-1 bg-ocean-500 mx-auto rounded-full"></div>
@@ -480,7 +487,7 @@ export default function App() {
         <div className="container mx-auto px-6">
            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div>
-                <h3 className="font-heading font-bold text-xl mb-2">DOMUS<span className="text-ocean-400">AQUA</span></h3>
+                <h3 className="font-heading font-bold text-xl mb-2">DOMNUS<span className="text-ocean-400">AQUA</span></h3>
                 <p className="text-slate-500 text-sm">© 2025 All rights reserved.</p>
               </div>
               
