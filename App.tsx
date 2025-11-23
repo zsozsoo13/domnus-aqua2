@@ -62,23 +62,22 @@ export default function App() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${navBackground}`}>
         <div className="container mx-auto px-6 h-20 flex justify-between items-center">
           
-     
           {/* Logo */}
-<a href="#" className="flex items-center gap-2 group">
-  {/* EZT CSERÉLD LE A KÉPRE! */}
-  <div className="relative w-10 h-10 flex items-center justify-center rounded-lg overflow-hidden group-hover:scale-110 transition-transform">
-    <img 
-      src={logoKép} // A változó, amit importáltál
-      alt="Tanuszoda Logó" 
-      className="w-full h-full object-cover" // A képet kitölti a div-et
-    />
-  </div>
-  {/* A szöveg marad a képen kívül, ahogy eddig is volt */}
-  <div className="flex flex-col">
-    <span className="font-heading font-bold text-xl leading-none tracking-tight">DOMNUS<span className="text-ocean-400">AQUA</span></span>
-    <span className="text-[10px] text-slate-400 uppercase tracking-widest">{lang === 'hu' ? 'Tanuszoda' : 'Bazin Înot'}</span>
-  </div>
-</a>
+          <a href="#" className="flex items-center gap-2 group">
+            {/* LOGO KÉP MÓDOSÍTVA: KÖZVETLEN ÚTVONAL HASZNÁLATA */}
+            <div className="relative w-10 h-10 flex items-center justify-center rounded-lg overflow-hidden group-hover:scale-110 transition-transform">
+              <img 
+                src="/tanuszoda.jpeg" // Módosított útvonal: /tanuszoda.jpeg
+                alt="Tanuszoda Logó" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            {/* A szöveg marad a képen kívül, ahogy eddig is volt */}
+            <div className="flex flex-col">
+              <span className="font-heading font-bold text-xl leading-none tracking-tight">DOMNUS<span className="text-ocean-400">AQUA</span></span>
+              <span className="text-[10px] text-slate-400 uppercase tracking-widest">{lang === 'hu' ? 'Tanuszoda' : 'Bazin Înot'}</span>
+            </div>
+          </a>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
@@ -351,7 +350,7 @@ export default function App() {
                             )}
                           </div>
                           <div className="flex items-center justify-between md:justify-end gap-4 min-w-[140px]">
-                             <span className="text-xl font-bold text-ocean-400 whitespace-nowrap">{item.price}</span>
+                              <span className="text-xl font-bold text-ocean-400 whitespace-nowrap">{item.price}</span>
                           </div>
                         </div>
                       ))}
@@ -377,7 +376,7 @@ export default function App() {
           </motion.h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 auto-rows-[200px]">
-             {GALLERY_IMAGES.map((img, index) => (
+              {GALLERY_IMAGES.map((img, index) => (
                 <motion.div 
                   key={index}
                   initial={{ opacity: 0, scale: 0.9 }}
@@ -392,7 +391,7 @@ export default function App() {
                     <span className="text-white font-bold tracking-widest uppercase border border-white px-4 py-2">View</span>
                   </div>
                 </motion.div>
-             ))}
+              ))}
           </div>
         </div>
       </section>
@@ -486,16 +485,16 @@ export default function App() {
       <footer className="bg-slate-950 py-12 border-t border-white/5 text-center md:text-left">
         <div className="container mx-auto px-6">
            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-              <div>
-                <h3 className="font-heading font-bold text-xl mb-2">DOMNUS<span className="text-ocean-400">AQUA</span></h3>
-                <p className="text-slate-500 text-sm">© 2025 All rights reserved.</p>
-              </div>
-              
-              <div className="flex gap-4">
-                 <a href="https://www.facebook.com/profile.php?id=100092718712285" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-blue-600 hover:text-white text-slate-400 p-3 rounded-full transition-all">
-                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
-                 </a>
-              </div>
+             <div>
+               <h3 className="font-heading font-bold text-xl mb-2">DOMNUS<span className="text-ocean-400">AQUA</span></h3>
+               <p className="text-slate-500 text-sm">© 2025 All rights reserved.</p>
+             </div>
+             
+             <div className="flex gap-4">
+                <a href="https://www.facebook.com/profile.php?id=100092718712285" target="_blank" rel="noopener noreferrer" className="bg-slate-900 hover:bg-blue-600 hover:text-white text-slate-400 p-3 rounded-full transition-all">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                </a>
+             </div>
            </div>
         </div>
       </footer>
