@@ -116,17 +116,21 @@ export const PRICES: PriceCategory[] = [
   }
 ];
 
+// ... (A fenti kód változatlan)
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { src: 'Tanuszoda.jpg', alt: 'Medence', category: 'pool' },
-  { src: 'Medenceter.jpg', alt: 'Architecture', category: 'building' },
-  { src: 'Medenceter1.jpg', alt: 'Swimming Lesson', category: 'activity' },
-  { src: 'minibararak.jpeg', alt: 'Sauna', category: 'wellness' },
-  { src: 'Masszazs.jpg', alt: 'Relaxation Area', category: 'wellness' },
-  { src: 'Oltozok.jpg', alt: 'Evening Pool', category: 'pool' },
-  { src: 'Recepcio.jpg', alt: 'Massage', category: 'wellness' },
-  { src: 'Szauna1.jpg', alt: 'Training', category: 'activity' },
-  { src: 'Szauna2.jpg', alt: 'Training', category: 'activity' },
+  { src: '/tanuszoda.jpg', alt: 'Medence', category: 'pool' },
+  { src: '/medenceter.jpg', alt: 'Medence', category: 'building' },
+  { src: '/medenceter1.jpg', alt: 'Swimming Lesson', category: 'activity' },
+  { src: '/minibararak.jpeg', alt: 'Sauna', category: 'wellness' },
+  { src: '/masszazs.jpg', alt: 'Relaxation Area', category: 'wellness' },
+  { src: '/oltozok.jpg', alt: 'Evening Pool', category: 'pool' },
+  { src: '/recepcio.jpg', alt: 'Massage', category: 'wellness' },
+  { src: '/szauna1.jpg', alt: 'Training', category: 'activity' },
+  { src: '/szauna2.jpg', alt: 'Training', category: 'activity' },
 ];
+
+export const CONTACT_INFO: ContactInfo = {
+// ... (A lenti kód változatlan)
 
 export const CONTACT_INFO: ContactInfo = {
   phoneReception: '0742 771 036',
