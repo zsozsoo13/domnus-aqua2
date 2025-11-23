@@ -6,8 +6,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // EZT A SORT MÓDOSÍTSD:
-      base: '/domnus-aqua2/', // <-- EZ A TE GITHUB REPOSITORY NEVED!
+      // EZ A MÓDOSÍTOTT RÉSZ: a "domnus-aqua2" repository-névvel
+      base: '/domnus-aqua2/',
       server: {
         port: 3000,
         host: '0.0.0.0',
