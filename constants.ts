@@ -118,7 +118,7 @@ export const PRICES: PriceCategory[] = [
 
 export const GALLERY_IMAGES: GalleryImage[] = [
   { src: 'Tanuszoda.jpg', alt: 'Medence', category: 'pool' },
-  { src: 'Medenceter.jpg, alt: 'Architecture', category: 'building' },
+  { src: 'Medenceter.jpg', alt: 'Architecture', category: 'building' },
   { src: 'Medenceter1.jpg', alt: 'Swimming Lesson', category: 'activity' },
   { src: 'minibararak.jpeg', alt: 'Sauna', category: 'wellness' },
   { src: 'Masszazs.jpg', alt: 'Relaxation Area', category: 'wellness' },
